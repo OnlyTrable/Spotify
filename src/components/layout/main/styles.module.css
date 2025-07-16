@@ -1,0 +1,76 @@
+.fullContainer{
+    /*width: 100vw;
+    height: 100vh;*/
+}
+.container {
+    display: inline-flex;
+    flex-direction: column;
+    max-width: 106rem; /*1707px;*/
+    max-height: 50rem; /*796px;*/
+    background-color: #060417;
+    margin: 10% 13%;
+}
+img {
+    background-color: #060417;
+}
+.topLogo {
+    display: flex;
+    width: 140px;
+    height: 45px;
+    margin-top: 3.3rem;
+    margin-left: 2.2rem;
+}
+.other{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin: 7rem 23rem;
+    background-color: #060417;
+}
+h1 { 
+    font-size: 4rem;
+    white-space: nowrap; 
+}
+p {
+    font-size: 2rem;
+}
+
+h1, p {
+    font-family: Rubik;
+    font-weight: 700;
+    color: #1ED760;
+    background-color: #060417;
+}
+.logo{
+    height: 6rem;
+    width: 6rem;
+    margin: 0.3rem;
+    background-color: #060417;
+}
+.logosouter{
+    border: 3px #1ED760 solid;
+    border-radius: 4rem;
+    margin: 2rem;
+    background-color: #060417;
+}
+
+.logos{
+    display: flex;
+    background-color: #060417;
+    margin: 2rem 3.5rem;
+}
+
+.socialLogo {
+    transition: transform 0.3s ease, filter 0.3s ease;
+    cursor: pointer;
+}
+
+.socialLogo:hover {
+    transform: translateY(-15px);
+}
+
+.socialLogo:hover {
+    filter: brightness(0) saturate(100%) invert(37%) sepia(98%) saturate(2746%) hue-rotate(203deg) brightness(101%) contrast(101%);
+}
