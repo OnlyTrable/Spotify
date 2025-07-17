@@ -1,6 +1,9 @@
-.fullContainer{
-    /*width: 100vw;
-    height: 100vh;*/
+.fullContainer{ 
+    background-color: var(--color-background);    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 .container {
     display: inline-flex;
@@ -8,7 +11,7 @@
     max-width: 106rem; /*1707px;*/
     max-height: 50rem; /*796px;*/
     background-color: #060417;
-    margin: 10% 13%;
+    margin: 5% 13%;
 }
 img {
     background-color: #060417;
@@ -63,14 +66,19 @@ h1, p {
 }
 
 .socialLogo {
-    transition: transform 0.3s ease, filter 0.3s ease;
+    transition: transform 0.3s ease;
     cursor: pointer;
+    color: #1ED760;
 }
 
 .socialLogo:hover {
     transform: translateY(-15px);
 }
 
+ .socialLogo { /* Вибираємо SVG всередині .socialLogo */
+    transition: fill 0.3s ease;
+}
 .socialLogo:hover {
-    filter: brightness(0) saturate(100%) invert(37%) sepia(98%) saturate(2746%) hue-rotate(203deg) brightness(101%) contrast(101%);
+    /* fill: #1181F1;  Змінюємо fill SVG на потрібний колір */
+    color: #1181F1;
 }
