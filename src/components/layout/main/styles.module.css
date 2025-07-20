@@ -12,10 +12,8 @@
   flex-direction: column;
   width: 90vw;
   max-width: 106rem; /*1707px;*/
-  /* min-height: 50rem;*/
   max-height: 70vh; /*50rem; або 796px;*/
   background-color: #060417;
-  /*  margin: 5% 13%; */
   margin: 2% auto; /* Вертикальний відступ 2%, горизонтальний авто для центрування */
   padding: 2rem; /* Внутрішній відступ для контенту */
   box-sizing: border-box;
@@ -28,7 +26,6 @@ img {
   width: 10vw;
   max-width: 140px;
   height: auto;
-  /* height: 45px; */
   margin-top: 3.3rem;
   margin-left: 2.2rem;
 }
@@ -38,7 +35,6 @@ img {
   justify-content: center;
   flex-wrap: nowrap;
   align-items: center;
-  /* margin: 7rem 23rem; */
   margin: 5vw 10vw; /* Відносні відступи */
   background-color: #060417;
 }
@@ -69,8 +65,6 @@ p {
   background-color: #060417;
 }
 .logo {
-  /*height: 6rem;
-    width: 6rem; */
   height: clamp(
     3rem,
     5vw,
@@ -131,18 +125,5 @@ p {
   }
   .topLogo {
     width: 140px; /* Фіксований розмір на великих екранах */
-  }
-}
-
-/* Якщо потрібно, змініть напрямок FlexContainer для елементів на дуже малих екранах */
-@media (max-width: 480px) {
-  .other {
-    /* Якщо елементи в other потрібно розташувати інакше на мобільних */
-    /* flex-direction: row; flex-wrap: wrap; */
-    margin: 5vw 2vw; /* Зменшити відступи для мобільних */
-  }
-  h1 {
-    white-space: normal; /* Дозволити переносити текст на малих екранах */
-    text-align: center;
   }
 }
