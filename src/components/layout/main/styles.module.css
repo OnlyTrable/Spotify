@@ -1,137 +1,148 @@
-.fullContainer{ 
-    background-color: var(--color-background);    
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-    padding: 1rem; /* Наприклад, 16px */
-    box-sizing: border-box; /* для адаптивного дизайну */
+.fullContainer {
+  background-color: var(--color-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 1rem; /* Наприклад, 16px */
+  box-sizing: border-box; /* для адаптивного дизайну */
 }
 .container {
-    display: inline-flex;
-    flex-direction: column;
-    width: 90vw;
-    max-width: 106rem; /*1707px;*/
-    /* min-height: 50rem;*/
-    max-height: 70vh; /*50rem; або 796px;*/
-    background-color: #060417;
-    /*  margin: 5% 13%; */
-    margin: 2% auto; /* Вертикальний відступ 2%, горизонтальний авто для центрування */
-    padding: 2rem; /* Внутрішній відступ для контенту */
-    box-sizing: border-box;
+  display: inline-flex;
+  flex-direction: column;
+  width: 90vw;
+  max-width: 106rem; /*1707px;*/
+  /* min-height: 50rem;*/
+  max-height: 70vh; /*50rem; або 796px;*/
+  background-color: #060417;
+  /*  margin: 5% 13%; */
+  margin: 2% auto; /* Вертикальний відступ 2%, горизонтальний авто для центрування */
+  padding: 2rem; /* Внутрішній відступ для контенту */
+  box-sizing: border-box;
 }
 img {
-    background-color: #060417;
+  background-color: #060417;
 }
 .topLogo {
-    display: flex;
-    width: 10vw;
-    max-width: 140px;
-    height: auto;
-    /* height: 45px; */
-    margin-top: 3.3rem;
-    margin-left: 2.2rem;
+  display: flex;
+  width: 10vw;
+  max-width: 140px;
+  height: auto;
+  /* height: 45px; */
+  margin-top: 3.3rem;
+  margin-left: 2.2rem;
 }
-.other{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex-wrap: nowrap;
-    align-items: center;
-    /* margin: 7rem 23rem; */
-    margin: 5vw 10vw; /* Відносні відступи */
-    background-color: #060417;
+.other {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  /* margin: 7rem 23rem; */
+  margin: 5vw 10vw; /* Відносні відступи */
+  background-color: #060417;
 }
-h1 { 
-    white-space: nowrap; 
-    font-size: clamp(2.5rem, 2.5vw, 4rem); /* Мінімальний 2.5rem, бажаний 5vw, максимальний 4rem */
+h1 {
+  font-size: clamp(
+    2.5rem,
+    2.1vw,
+    4rem
+  ); /* Мінімальний 2.5rem, бажаний 5vw, максимальний 4rem */
+  white-space: nowrap;
 }
-/*@media (max-width: 1385px) {
-    h1 {
-        white-space: normal; /* На малих екранах (до 1385px) текст переноситься */
-  /*  }*/
-/*}*/
+@media (max-width: 610px) {
+  h1 {
+    white-space: normal; /* На малих екранах (до 610px) текст переноситься */
+  }
+}
 p {
-    font-size: 2rem;
-    font-size: clamp(1.2rem, 2.5vw, 2rem);
+  white-space: nowrap;
+  font-size: 2rem;
+  font-size: clamp(1.2rem, 2.1vw, 2rem);
 }
 
-h1, p {
-    font-family: Rubik;
-    font-weight: 700;
-    color: #1ED760;
-    background-color: #060417;
+h1,
+p {
+  font-family: Rubik;
+  font-weight: 700;
+  color: #1ed760;
+  background-color: #060417;
 }
-.logo{
-    /*height: 6rem;
+.logo {
+  /*height: 6rem;
     width: 6rem; */
-    height: clamp(3rem, 5vw, 6rem); /* Адаптивна висота, щоб іконки масштабувалися */
-    width: clamp(3rem, 5vw, 6rem);  /* Адаптивна ширина */
-    margin: 0.3rem;
-    background-color: #060417;
+  height: clamp(
+    3rem,
+    5vw,
+    6rem
+  ); /* Адаптивна висота, щоб іконки масштабувалися */
+  width: clamp(3rem, 5vw, 6rem); /* Адаптивна ширина */
+  margin: 0.3rem;
+  background-color: #060417;
 }
-.logosouter{
-    border: 3px #1ED760 solid;
-    border-radius: 4rem;
-    margin: 2rem;
-    background-color: #060417;
+.logosouter {
+  border: 3px #1ed760 solid;
+  border-radius: 4rem;
+  margin: 2rem;
+  background-color: #060417;
 }
 
-.logos{
-    display: flex;
-    background-color: #060417;
-    margin: 2rem 3.5rem;
+.logos {
+  display: flex;
+  background-color: #060417;
+  margin: 2rem 3.5rem;
 }
 
 .socialLogo {
-    transition: transform 0.3s ease;
-    cursor: pointer;
-    color: #1ED760;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  color: #1ed760;
 }
 
 .socialLogo:hover {
-    transform: translateY(-15px);
+  transform: translateY(-15px);
 }
 
- .socialLogo { /* Вибираємо SVG всередині .socialLogo */
-    transition: fill 3s ease;
+.socialLogo {
+  /* Вибираємо SVG всередині .socialLogo */
+  transition: fill 3s ease;
 }
 .socialLogo:hover {
-    /* fill: #1181F1;  Змінюємо fill SVG на потрібний колір */
-    color: #1181F1;
+  /* fill: #1181F1;  Змінюємо fill SVG на потрібний колір */
+  color: #1181f1;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .container {
-        width: 80vw; /* Трохи ширше на планшетах */
-    }
-    .other {
-        margin: 3vw 5vw; /* Менші відступи для кращого використання простору */
-    }
+  .container {
+    width: 80vw; /* Трохи ширше на планшетах */
+  }
+  .other {
+    margin: 3vw 5vw; /* Менші відступи для кращого використання простору */
+  }
 }
 
 /* Специфічні стилі для десктопів (ширина від 1025px) */
 @media (min-width: 1025px) {
-    .container {
-        width: 70vw; /* Ширше на десктопах */
-    }
-    .other {
-        margin: 7rem 23rem; /* Можна повернути до фіксованих, якщо це виглядає краще на великих екранах */
-    }
-    .topLogo {
-        width: 140px; /* Фіксований розмір на великих екранах */
-    }
+  .container {
+    width: 70vw; /* Ширше на десктопах */
+  }
+  .other {
+    margin: 7rem 23rem; /* Можна повернути до фіксованих, якщо це виглядає краще на великих екранах */
+  }
+  .topLogo {
+    width: 140px; /* Фіксований розмір на великих екранах */
+  }
 }
 
 /* Якщо потрібно, змініть напрямок FlexContainer для елементів на дуже малих екранах */
 @media (max-width: 480px) {
-    .other {
-        /* Якщо елементи в other потрібно розташувати інакше на мобільних */
-        /* flex-direction: row; flex-wrap: wrap; */
-        margin: 5vw 2vw; /* Зменшити відступи для мобільних */
-    }
-    h1 {
-        white-space: normal; /* Дозволити переносити текст на малих екранах */
-        text-align: center;
-    }
+  .other {
+    /* Якщо елементи в other потрібно розташувати інакше на мобільних */
+    /* flex-direction: row; flex-wrap: wrap; */
+    margin: 5vw 2vw; /* Зменшити відступи для мобільних */
+  }
+  h1 {
+    white-space: normal; /* Дозволити переносити текст на малих екранах */
+    text-align: center;
+  }
 }
