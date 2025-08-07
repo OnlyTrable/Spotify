@@ -4,18 +4,19 @@
   justify-content: center;
   align-items: center;
   min-height: 100vh;
-  padding: 1rem; /* Наприклад, 16px */
+  padding: 1em; /* Наприклад, 16px */
   box-sizing: border-box; /* для адаптивного дизайну */
+  font-size: clamp(10px, 1vw, 16px);
 }
 .container {
   display: inline-flex;
   flex-direction: column;
   width: 90vw;
-  max-width: 106rem; /*1707px;*/
-  max-height: 70vh; /*50rem; або 796px;*/
+  max-width: 106em; /*1707px;*/
+  max-height: 70vh; /*50em; або 796px;*/
   background-color: #060417;
   margin: 2% auto; /* Вертикальний відступ 2%, горизонтальний авто для центрування */
-  padding: 2rem; /* Внутрішній відступ для контенту */
+  padding: 2em; /* Внутрішній відступ для контенту */
   box-sizing: border-box;
 }
 img {
@@ -26,8 +27,8 @@ img {
   width: 10vw;
   max-width: 140px;
   height: auto;
-  margin-top: 3.3rem;
-  margin-left: 2.2rem;
+  margin-top: 3.3em;
+  margin-left: 2.2em;
 }
 .other {
   display: flex;
@@ -40,10 +41,10 @@ img {
 }
 h1 {
   font-size: clamp(
-    2.5rem,
+    2.5em,
     2.1vw,
-    4rem
-  ); /* Мінімальний 2.5rem, бажаний 5vw, максимальний 4rem */
+    4em
+  ); /* Мінімальний 2.5em, бажаний 5vw, максимальний 4em */
   white-space: nowrap;
 }
 @media (max-width: 610px) {
@@ -53,8 +54,8 @@ h1 {
 }
 p {
   white-space: nowrap;
-  font-size: 2rem;
-  font-size: clamp(1.2rem, 2.1vw, 2rem);
+  font-size: 2em;
+  font-size: clamp(1.2em, 2.1vw, 2em);
 }
 
 h1,
@@ -66,25 +67,25 @@ p {
 }
 .logo {
   height: clamp(
-    3rem,
+    3em,
     5vw,
-    6rem
+    6em
   ); /* Адаптивна висота, щоб іконки масштабувалися */
-  width: clamp(3rem, 5vw, 6rem); /* Адаптивна ширина */
-  margin: 0.3rem;
+  width: clamp(3em, 5vw, 6em); /* Адаптивна ширина */
+  margin: 0.3em;
   background-color: #060417;
 }
 .logosouter {
   border: 3px #1ed760 solid;
-  border-radius: 4rem;
-  margin: 2rem;
+  border-radius: 4em;
+  margin: 2em;
   background-color: #060417;
 }
 
 .logos {
   display: flex;
   background-color: #060417;
-  margin: 2rem 3.5rem;
+  margin: 2em 3.5em;
 }
 
 .socialLogo {
@@ -121,7 +122,7 @@ p {
     width: 70vw; /* Ширше на десктопах */
   }
   .other {
-    margin: 7rem 23rem; /* Можна повернути до фіксованих, якщо це виглядає краще на великих екранах */
+    margin: 7em 23em; /* Можна повернути до фіксованих, якщо це виглядає краще на великих екранах */
   }
   .topLogo {
     width: 140px; /* Фіксований розмір на великих екранах */
